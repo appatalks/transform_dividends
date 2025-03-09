@@ -71,12 +71,6 @@ GOLD,,,127.52,,128.37,,,129.07
 If you get this error:
 
 ```bash
-Traceback (most recent call last):
-  File "/home/mj420/Downloads/div/transform-div.py", line 95, in <module>
-    main()
-  File "/home/mj420/Downloads/div/transform-div.py", line 26, in main
-    trade_date = row['Trade Date'].strip('"')
-                 ~~~^^^^^^^^^^^^^^
 KeyError: 'Trade Date'
 ```
 
