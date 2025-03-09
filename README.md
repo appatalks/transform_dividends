@@ -17,7 +17,7 @@ This script transforms a CSV file containing dividend and interest data into a n
    - **Basic Usage** (aggregate by individual dates):
 
      ```bash
-     python3 transform_dividends.py dividends.xls
+     python3 transform_dividends.py dividends.csv
      ```
 
    - **Aggregate by Month** (using the `-m` flag):
@@ -29,7 +29,7 @@ This script transforms a CSV file containing dividend and interest data into a n
      or
 
      ```bash
-     python3 transform_dividends.py dividends.xls --monthly
+     python3 transform_dividends.py dividends.csv --monthly
      ```
 
 3. **Check the Output**:
@@ -66,5 +66,19 @@ GOLD,,,127.52,,128.37,,,129.07
 - **Dependencies**: Uses standard Python libraries (`csv`, `sys`, `argparse`, `collections`). No additional packages are required.
 - **Python Version**: Ensure you're using Python 3.x to run the script.
 
+#### Troubleshooting
 
+If you get this error:
+
+```bash
+Traceback (most recent call last):
+  File "/home/mj420/Downloads/div/transform-div.py", line 95, in <module>
+    main()
+  File "/home/mj420/Downloads/div/transform-div.py", line 26, in main
+    trade_date = row['Trade Date'].strip('"')
+                 ~~~^^^^^^^^^^^^^^
+KeyError: 'Trade Date'
+```
+
+Use ```dos2unix``` on the CSV file first.
 
