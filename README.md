@@ -17,7 +17,7 @@ This script transforms a CSV file containing dividend and interest data into a n
    - **Basic Usage** (aggregate by individual dates):
 
      ```bash
-     python3 transform_dividends.py dividends.csv
+     python3 transform_dividends.py dividends.xls
      ```
 
    - **Aggregate by Month** (using the `-m` flag):
@@ -29,12 +29,12 @@ This script transforms a CSV file containing dividend and interest data into a n
      or
 
      ```bash
-     python3 transform_dividends.py dividends.csv --monthly
+     python3 transform_dividends.py dividends.xls --monthly
      ```
 
 3. **Check the Output**:
 
-   After running the script, a new file named `transformed_dividends.csv` will be created. Open this file with a spreadsheet application like Microsoft Excel or Google Sheets to view the transformed data.
+   After running the script, a new file named `transformed_dividends.xls` will be created. Open this file with a spreadsheet application like Microsoft Excel or Google Sheets to view the transformed data.
 
 ## Example Outputs
 
